@@ -142,7 +142,7 @@
                         con = c.getCon();
                         if (con != null) {
                             PreparedStatement ps = null;
-                            String sql = "SELECT * FROM Hotel WHERE 1=1 "; // Base para concatenar
+                            String sql = "SELECT * FROM hotel WHERE 1=1 "; // Base para concatenar
                             
                             // 1. LÓGICA DE FILTROS (BOTONES)
                             String filtro = request.getParameter("filtro");
