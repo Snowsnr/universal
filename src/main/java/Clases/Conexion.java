@@ -28,22 +28,9 @@ public class Conexion {
 
     public void setCon() {
        try{
-           
-     //POSTGRE HOST, CON ESTE HACEN LA PULL REQUESTT
      
-     /*
-     String dbDriver = "org.postgresql.Driver";
-     String dbURL = "jdbc:postgresql://ec2-100-26-73-144.compute-1.amazonaws.com/db3v6hean6n35q";
-                          
-             
-     String dbUsername = "ipsrpxvnaqxiwm";
-     String dbPassword = "45a8d512e214c8aec0d15935b70c9addc631a10c65bc23296d0e2e2bd0b2f0a0";
-     Class.forName(dbDriver).newInstance();
-     con = DriverManager.getConnection(dbURL,dbUsername, dbPassword);
-     
-     */
      //MYSQL LOCAL CAMBIEN LA CONTRASEÑA
-     //
+     /*
      String dbDriver = "com.mysql.jdbc.Driver";
      String dbURL = "jdbc:mysql://localhost:3306/";
                 // Database name to access
@@ -54,20 +41,26 @@ public class Conexion {
      con = DriverManager.getConnection(dbURL + dbName,
      dbUsername,
      dbPassword); 
-     //
-     /* POSTGRE SQL LOCAL POR FAVOR USEN ESTA Y HAGAN TODOS LOS COMMMITS CON ESTA (llamenla MydeaLocal para que no tengan que cambiarlo aqui)
-     
-     String dbDriver = "org.postgresql.Driver";
-     String dbURL = "jdbc:postgresql://localhost/MydeaLocal";
-                          
-             
-     String dbUsername = "postgres";
-     String dbPassword = "20232707";
-     Class.forName(dbDriver).newInstance();
-     con = DriverManager.getConnection(dbURL,dbUsername, dbPassword);
-     
      */
-      
+     
+    String dbDriver = "com.mysql.cj.jdbc.Driver"; 
+    
+    // 2. La URL solo debe tener la dirección, puerto y nombre de la BD
+    // Formato: jdbc:mysql://[HOST]:[PORT]/[DB_NAME]
+    String connectionUrl = "jdbc:mysql://crossover.proxy.rlwy.net:50074/railway";
+    
+    // 3. Credenciales por separado
+    String dbUsername = "root";
+    String dbPassword = "FJFooPQsHISyzllZZapRkdwYVZqwouxp"; // Tu contraseña real
+
+    // Cargar el driver
+    Class.forName(dbDriver);
+    
+    // 4. Conectar pasando la URL limpia y las credenciales aparte
+    // (Añadimos useSSL=false para evitar errores de certificados en pruebas)
+    con = DriverManager.getConnection(connectionUrl + "?useSSL=false", dbUsername, dbPassword);
+
+   
       } catch (Exception e ) {
             System.out.println("erore");
                 System.err.println("Error"+e);
