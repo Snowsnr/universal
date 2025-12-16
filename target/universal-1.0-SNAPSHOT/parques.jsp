@@ -187,7 +187,7 @@
             
             while (r.next()) {
                 nombreatraccion.add(r.getString("nombre"));
-                tipo.add(r.getString("Tipo"));
+                tipo.add(r.getString("Descripcion"));
                 altura.add(String.valueOf(r.getInt("restriccion_altura")));
                 fila.add(String.valueOf(r.getTime("tiempo_fila_promedio")));
                 k2=k2+1;
@@ -198,7 +198,7 @@
             
             while (r.next()) {
                 nombreatraccion.add(r.getString("nombre"));
-                tipo.add(r.getString("Tipo"));
+                tipo.add(r.getString("Descripcion"));
                 altura.add(String.valueOf(r.getInt("restriccion_altura")));
                 fila.add(String.valueOf(r.getTime("tiempo_fila_promedio")));
                 k3=k3+1;
@@ -209,7 +209,7 @@
             
             while (r.next()) {
                 nombreatraccion.add(r.getString("nombre"));
-                tipo.add(r.getString("Tipo"));
+                tipo.add(r.getString("Descripcion"));
                 altura.add(String.valueOf(r.getInt("restriccion_altura")));
                 fila.add(String.valueOf(r.getTime("tiempo_fila_promedio")));
                 k4=k4+1;
@@ -220,7 +220,7 @@
             
             while (r.next()) {
                 nombreatraccion.add(r.getString("nombre"));
-                tipo.add(r.getString("Tipo"));
+                tipo.add(r.getString("Descripcion"));
                 altura.add(String.valueOf(r.getInt("restriccion_altura")));
                 fila.add(String.valueOf(r.getTime("tiempo_fila_promedio")));
                 k5=k5+1;
@@ -231,7 +231,7 @@
             
             while (r.next()) {
                 nombreatraccion.add(r.getString("nombre"));
-                tipo.add(r.getString("Tipo"));
+                tipo.add(r.getString("Descripcion"));
                 altura.add(String.valueOf(r.getInt("restriccion_altura")));
                 fila.add(String.valueOf(r.getTime("tiempo_fila_promedio")));
                 k6=k6+1;
@@ -245,7 +245,7 @@
             
             while (r.next()) {
                 nombreevento.add(r.getString("nombre"));
-                tipoevento.add(r.getString("Tipo_evento"));
+                tipoevento.add(r.getString("Descripcion_evento"));
                 e=e+1;
              }
             
@@ -254,7 +254,7 @@
             
             while (r.next()) {
                 nombreevento.add(r.getString("nombre"));
-                tipoevento.add(r.getString("Tipo_evento"));
+                tipoevento.add(r.getString("Descripcion_evento"));
                 e1=e1+1;
              }
             
@@ -263,7 +263,7 @@
             
             while (r.next()) {
                 nombreevento.add(r.getString("nombre"));
-                tipoevento.add(r.getString("Tipo_evento"));
+                tipoevento.add(r.getString("Descripcion_evento"));
                 e2=e2+1;
              }
             
@@ -272,7 +272,7 @@
             
             while (r.next()) {
                 nombreevento.add(r.getString("nombre"));
-                tipoevento.add(r.getString("Tipo_evento"));
+                tipoevento.add(r.getString("Descripcion_evento"));
                 e3=e3+1;
              }
             
@@ -281,7 +281,7 @@
             
             while (r.next()) {
                 nombreevento.add(r.getString("nombre"));
-                tipoevento.add(r.getString("Tipo_evento"));
+                tipoevento.add(r.getString("Descripcion_evento"));
                 e4=e4+1;
              }
             

@@ -213,11 +213,11 @@
                 <div class="form-group">
                     <label for="metodo_pago">Método de Pago (*)</label>
                     <select id="metodo_pago" name="metodo_pago" required>
-                        <option value="">-- Seleccione el método --</option>
+                       <option value="">-- Seleccione el método --</option>
                         <option value="Tarjeta VISA">Tarjeta de Crédito / Débito (VISA)</option>
-                        <option value="MasterCard">MasterCard / AMEX</option>
+                        <option value="MasterCard/AMEX">MasterCard / AMEX</option>
                         <option value="PayPal">PayPal</option>
-                    </select>
+                        </select>
                 </div>
                 
                 <div class="form-group">

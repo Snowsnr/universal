@@ -95,6 +95,18 @@
             .btn-modal { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; text-align: center; font-size: 0.95em;}
             .btn-boleto { background-color: #6c757d; color: white; }
             .btn-paquete { background-color: #28a745; color: white; }
+            
+            .back-link {
+            display: inline-block;
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            transition: background-color 0.3s;
+        }
         </style>
     </head>
     <body>
@@ -103,7 +115,7 @@
             <h1>Universal Orlando Resort</h1>
             <p style="font-size: 1.1em; opacity: 0.9;">Catálogo Oficial de Hoteles y Paquetes</p>
         </header>
-
+        <a href="index.jsp" class="back-link">← Volver al Inicio</a>
         <div class="container">
             
             <div class="toolbar">
@@ -246,8 +258,8 @@
                 document.getElementById("modalCategoria").innerText = categoria;
                 document.getElementById("modalPrecio").innerText = precio;
                 document.getElementById("modalBeneficio").innerText = beneficio;
-                document.getElementById("linkBoleto").href = "compraBoleto.jsp?hotel_id=" + id + "&nombre=" + encodeURIComponent(nombre);
-                document.getElementById("linkPaquete").href = "compraPaquete.jsp?hotel_id=" + id + "&nombre=" + encodeURIComponent(nombre);
+                document.getElementById("linkBoleto").href = "compra_boleto.jsp?hotel_id=" + id + "&nombre=" + encodeURIComponent(nombre);
+                document.getElementById("linkPaquete").href = "compra_paquetes.jsp?hotel_id=" + id + "&nombre=" + encodeURIComponent(nombre);
                 document.getElementById("miVentanaModal").style.display = "flex"; 
             }
             function cerrarModal() { document.getElementById("miVentanaModal").style.display = "none"; }

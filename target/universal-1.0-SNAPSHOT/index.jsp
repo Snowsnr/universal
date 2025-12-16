@@ -166,6 +166,11 @@
                 <span>🎁</span>
                 Comprar Paquetes Vacacionales
             </a>
+            
+            <a href="consultar_boletos.jsp" class="nav-button btn-package">
+                <span>🎫</span>
+                Consultar boletos
+            </a>
 
         </section>
 

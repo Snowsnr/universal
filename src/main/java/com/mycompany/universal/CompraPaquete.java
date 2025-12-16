@@ -73,7 +73,7 @@ public class CompraPaquete extends HttpServlet {
 
                 String mensaje = "¡Tu reserva de paquete ha sido realizada con éxito! Revisa tu email.";
                 request.setAttribute("mensaje", mensaje);
-                RequestDispatcher rd = request.getRequestDispatcher("compra_boleto.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("compra_paquetes.jsp");
                 rd.forward(request, response);
             
         }
