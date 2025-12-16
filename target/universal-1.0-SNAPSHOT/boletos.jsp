@@ -216,6 +216,7 @@
                 
                 <form action="EdicionBoleto" method="POST">
                     <input type="hidden" name="id_boleto" value="<%= idCompra.get(i) %>">
+                    <input type="hidden" name="id_cliente" value="<%= request.getAttribute("id") %>">
                     <button type="submit" class="btn btn-edit">Editar</button>
                 </form>
                 
@@ -259,10 +260,10 @@
 
         // Lógica de SweetAlert para mensajes de éxito/error (del Servlet de acción)
         window.onload = function() {
-            <% if (request.getAttribute("alerta") != null) { %>      
+            <% if (request.getAttribute("mensaje") != null) { %>      
                 Swal.fire({
                     icon: "info",
-                    title: "<%=request.getAttribute("alerta")%>",
+                    title: "<%=request.getAttribute("mensaje")%>",
                     showConfirmButton: true
                 });      
             <% } %>
